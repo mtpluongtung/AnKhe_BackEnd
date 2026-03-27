@@ -32,7 +32,7 @@
     "ReturnTypes": []
   },
   {
-    "ContainingType": "ComputerSales.API.Controllers.BannersController",
+    "ContainingType": "ComputerSalesAPI.Controllers.BannersController",
     "Method": "GetBanners",
     "RelativePath": "api/Banners",
     "HttpMethod": "GET",
@@ -52,7 +52,7 @@
     ]
   },
   {
-    "ContainingType": "ComputerSales.API.Controllers.BannersController",
+    "ContainingType": "ComputerSalesAPI.Controllers.BannersController",
     "Method": "CreateBanner",
     "RelativePath": "api/Banners",
     "HttpMethod": "POST",
@@ -78,7 +78,7 @@
     ]
   },
   {
-    "ContainingType": "ComputerSales.API.Controllers.BannersController",
+    "ContainingType": "ComputerSalesAPI.Controllers.BannersController",
     "Method": "GetBanner",
     "RelativePath": "api/Banners/{id}",
     "HttpMethod": "GET",
@@ -104,7 +104,7 @@
     ]
   },
   {
-    "ContainingType": "ComputerSales.API.Controllers.BannersController",
+    "ContainingType": "ComputerSalesAPI.Controllers.BannersController",
     "Method": "UpdateBanner",
     "RelativePath": "api/Banners/{id}",
     "HttpMethod": "PUT",
@@ -125,7 +125,7 @@
     "ReturnTypes": []
   },
   {
-    "ContainingType": "ComputerSales.API.Controllers.BannersController",
+    "ContainingType": "ComputerSalesAPI.Controllers.BannersController",
     "Method": "DeleteBanner",
     "RelativePath": "api/Banners/{id}",
     "HttpMethod": "DELETE",
@@ -211,6 +211,43 @@
         "StatusCode": 200
       }
     ]
+  },
+  {
+    "ContainingType": "ComputerSalesAPI.Controllers.CategoriesController",
+    "Method": "UpdateCategory",
+    "RelativePath": "api/Categories/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "category",
+        "Type": "ComputerSalesAPI.Core.Entities.Category",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ComputerSalesAPI.Controllers.CategoriesController",
+    "Method": "DeleteCategory",
+    "RelativePath": "api/Categories/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
   },
   {
     "ContainingType": "ComputerSales.API.Controllers.ContactsController",
@@ -431,7 +468,7 @@
     "ReturnTypes": []
   },
   {
-    "ContainingType": "ComputerSales.API.Controllers.NewsController",
+    "ContainingType": "ComputerSalesAPI.Controllers.NewsController",
     "Method": "GetNews",
     "RelativePath": "api/News",
     "HttpMethod": "GET",
@@ -452,7 +489,7 @@
     "ReturnTypes": []
   },
   {
-    "ContainingType": "ComputerSales.API.Controllers.NewsController",
+    "ContainingType": "ComputerSalesAPI.Controllers.NewsController",
     "Method": "CreateNews",
     "RelativePath": "api/News",
     "HttpMethod": "POST",
@@ -478,7 +515,7 @@
     ]
   },
   {
-    "ContainingType": "ComputerSales.API.Controllers.NewsController",
+    "ContainingType": "ComputerSalesAPI.Controllers.NewsController",
     "Method": "GetSingleNews",
     "RelativePath": "api/News/{id}",
     "HttpMethod": "GET",
@@ -504,7 +541,7 @@
     ]
   },
   {
-    "ContainingType": "ComputerSales.API.Controllers.NewsController",
+    "ContainingType": "ComputerSalesAPI.Controllers.NewsController",
     "Method": "UpdateNews",
     "RelativePath": "api/News/{id}",
     "HttpMethod": "PUT",
@@ -525,7 +562,7 @@
     "ReturnTypes": []
   },
   {
-    "ContainingType": "ComputerSales.API.Controllers.NewsController",
+    "ContainingType": "ComputerSalesAPI.Controllers.NewsController",
     "Method": "DeleteNews",
     "RelativePath": "api/News/{id}",
     "HttpMethod": "DELETE",
@@ -541,7 +578,7 @@
     "ReturnTypes": []
   },
   {
-    "ContainingType": "ComputerSales.API.Controllers.NewsCategoriesController",
+    "ContainingType": "ComputerSalesAPI.Controllers.NewsCategoriesController",
     "Method": "GetCategories",
     "RelativePath": "api/NewsCategories",
     "HttpMethod": "GET",
@@ -550,7 +587,7 @@
     "Parameters": [],
     "ReturnTypes": [
       {
-        "Type": "System.Collections.Generic.IReadOnlyList\u00601[[ComputerSalesAPI.Core.Entities.NewsCategory, ComputerSales.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[ComputerSalesAPI.Core.Entities.NewsCategory, ComputerSales.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
         "MediaTypes": [
           "text/plain",
           "application/json",
@@ -561,7 +598,7 @@
     ]
   },
   {
-    "ContainingType": "ComputerSales.API.Controllers.NewsCategoriesController",
+    "ContainingType": "ComputerSalesAPI.Controllers.NewsCategoriesController",
     "Method": "CreateCategory",
     "RelativePath": "api/NewsCategories",
     "HttpMethod": "POST",
@@ -569,7 +606,7 @@
     "Order": 0,
     "Parameters": [
       {
-        "Name": "item",
+        "Name": "category",
         "Type": "ComputerSalesAPI.Core.Entities.NewsCategory",
         "IsRequired": true
       }
@@ -587,7 +624,7 @@
     ]
   },
   {
-    "ContainingType": "ComputerSales.API.Controllers.NewsCategoriesController",
+    "ContainingType": "ComputerSalesAPI.Controllers.NewsCategoriesController",
     "Method": "GetCategory",
     "RelativePath": "api/NewsCategories/{id}",
     "HttpMethod": "GET",
@@ -613,7 +650,7 @@
     ]
   },
   {
-    "ContainingType": "ComputerSales.API.Controllers.NewsCategoriesController",
+    "ContainingType": "ComputerSalesAPI.Controllers.NewsCategoriesController",
     "Method": "UpdateCategory",
     "RelativePath": "api/NewsCategories/{id}",
     "HttpMethod": "PUT",
@@ -626,7 +663,7 @@
         "IsRequired": true
       },
       {
-        "Name": "item",
+        "Name": "category",
         "Type": "ComputerSalesAPI.Core.Entities.NewsCategory",
         "IsRequired": true
       }
@@ -634,7 +671,7 @@
     "ReturnTypes": []
   },
   {
-    "ContainingType": "ComputerSales.API.Controllers.NewsCategoriesController",
+    "ContainingType": "ComputerSalesAPI.Controllers.NewsCategoriesController",
     "Method": "DeleteCategory",
     "RelativePath": "api/NewsCategories/{id}",
     "HttpMethod": "DELETE",
@@ -656,18 +693,7 @@
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
-    "Parameters": [
-      {
-        "Name": "pageIndex",
-        "Type": "System.Int32",
-        "IsRequired": false
-      },
-      {
-        "Name": "pageSize",
-        "Type": "System.Int32",
-        "IsRequired": false
-      }
-    ],
+    "Parameters": [],
     "ReturnTypes": []
   },
   {
@@ -721,6 +747,27 @@
         "StatusCode": 200
       }
     ]
+  },
+  {
+    "ContainingType": "ComputerSalesAPI.Controllers.OrdersController",
+    "Method": "UpdateStatus",
+    "RelativePath": "api/Orders/{id}/status",
+    "HttpMethod": "PATCH",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "updateDto",
+        "Type": "ComputerSalesAPI.Controllers.OrderStatusUpdateDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
   },
   {
     "ContainingType": "ComputerSalesAPI.Controllers.ProductsController",
@@ -877,6 +924,32 @@
         "StatusCode": 200
       }
     ]
+  },
+  {
+    "ContainingType": "ComputerSalesAPI.Controllers.StatisticsController",
+    "Method": "GetConfirmedProducts",
+    "RelativePath": "api/Statistics/confirmed-products",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ComputerSalesAPI.Controllers.StatisticsController",
+    "Method": "GetRevenueStats",
+    "RelativePath": "api/Statistics/revenue-stats",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "period",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
   },
   {
     "ContainingType": "ComputerSales.API.Controllers.WebpageConfigsController",

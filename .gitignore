@@ -4,3 +4,10 @@
 
 /ComputerSales.API/appsettings.json
 /ComputerSales.API/Properties/launchSettings.json
+/ComputerSales.API/bin
+/ComputerSales.API/obj
+/ComputerSales.Core/bin
+/ComputerSales.Core/obj
+/ComputerSales.Infrastructure/bin
+/ComputerSales.Infrastructure/obj
+/.vs

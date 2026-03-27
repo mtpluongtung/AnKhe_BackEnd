@@ -13,3 +13,4 @@ E:\Hoc Tap\EHOU\IT63_LuongVanTung\Webbanmaytinh\backend\ComputerSales.Infrastruc
 E:\Hoc Tap\EHOU\IT63_LuongVanTung\Webbanmaytinh\backend\ComputerSales.Infrastructure\obj\Debug\net8.0\refint\ComputerSales.Infrastructure.dll
 E:\Hoc Tap\EHOU\IT63_LuongVanTung\Webbanmaytinh\backend\ComputerSales.Infrastructure\obj\Debug\net8.0\ComputerSales.Infrastructure.pdb
 E:\Hoc Tap\EHOU\IT63_LuongVanTung\Webbanmaytinh\backend\ComputerSales.Infrastructure\obj\Debug\net8.0\ref\ComputerSales.Infrastructure.dll
+E:\Hoc Tap\EHOU\IT63_LuongVanTung\Webbanmaytinh\backend\ComputerSales.Infrastructure\obj\Debug\net8.0\ComputerSales.Infrastructure.sourcelink.json

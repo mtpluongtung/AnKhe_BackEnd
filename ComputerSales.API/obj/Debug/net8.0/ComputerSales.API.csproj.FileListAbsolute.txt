@@ -149,3 +149,5 @@ E:\Hoc Tap\EHOU\IT63_LuongVanTung\Webbanmaytinh\backend\ComputerSales.API\obj\De
 E:\Hoc Tap\EHOU\IT63_LuongVanTung\Webbanmaytinh\backend\ComputerSales.API\obj\Debug\net8.0\ComputerSales.API.pdb
 E:\Hoc Tap\EHOU\IT63_LuongVanTung\Webbanmaytinh\backend\ComputerSales.API\obj\Debug\net8.0\ComputerSales.API.genruntimeconfig.cache
 E:\Hoc Tap\EHOU\IT63_LuongVanTung\Webbanmaytinh\backend\ComputerSales.API\obj\Debug\net8.0\ref\ComputerSales.API.dll
+E:\Hoc Tap\EHOU\IT63_LuongVanTung\Webbanmaytinh\backend\ComputerSales.API\obj\Debug\net8.0\ComputerSales.API.sourcelink.json
+E:\Hoc Tap\EHOU\IT63_LuongVanTung\Webbanmaytinh\backend\ComputerSales.API\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt

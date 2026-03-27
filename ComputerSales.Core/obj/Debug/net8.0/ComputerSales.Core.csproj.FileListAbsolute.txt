@@ -10,3 +10,4 @@ E:\Hoc Tap\EHOU\IT63_LuongVanTung\Webbanmaytinh\backend\ComputerSales.Core\obj\D
 E:\Hoc Tap\EHOU\IT63_LuongVanTung\Webbanmaytinh\backend\ComputerSales.Core\obj\Debug\net8.0\refint\ComputerSales.Core.dll
 E:\Hoc Tap\EHOU\IT63_LuongVanTung\Webbanmaytinh\backend\ComputerSales.Core\obj\Debug\net8.0\ComputerSales.Core.pdb
 E:\Hoc Tap\EHOU\IT63_LuongVanTung\Webbanmaytinh\backend\ComputerSales.Core\obj\Debug\net8.0\ref\ComputerSales.Core.dll
+E:\Hoc Tap\EHOU\IT63_LuongVanTung\Webbanmaytinh\backend\ComputerSales.Core\obj\Debug\net8.0\ComputerSales.Core.sourcelink.json
