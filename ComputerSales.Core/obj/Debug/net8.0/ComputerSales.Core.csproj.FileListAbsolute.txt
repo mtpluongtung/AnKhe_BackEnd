@@ -1,0 +1,12 @@
+E:\Hoc Tap\EHOU\IT63_LuongVanTung\Webbanmaytinh\backend\ComputerSales.Core\bin\Debug\net8.0\ComputerSales.Core.deps.json
+E:\Hoc Tap\EHOU\IT63_LuongVanTung\Webbanmaytinh\backend\ComputerSales.Core\bin\Debug\net8.0\ComputerSales.Core.dll
+E:\Hoc Tap\EHOU\IT63_LuongVanTung\Webbanmaytinh\backend\ComputerSales.Core\bin\Debug\net8.0\ComputerSales.Core.pdb
+E:\Hoc Tap\EHOU\IT63_LuongVanTung\Webbanmaytinh\backend\ComputerSales.Core\obj\Debug\net8.0\ComputerSales.Core.csproj.AssemblyReference.cache
+E:\Hoc Tap\EHOU\IT63_LuongVanTung\Webbanmaytinh\backend\ComputerSales.Core\obj\Debug\net8.0\ComputerSales.Core.GeneratedMSBuildEditorConfig.editorconfig
+E:\Hoc Tap\EHOU\IT63_LuongVanTung\Webbanmaytinh\backend\ComputerSales.Core\obj\Debug\net8.0\ComputerSales.Core.AssemblyInfoInputs.cache
+E:\Hoc Tap\EHOU\IT63_LuongVanTung\Webbanmaytinh\backend\ComputerSales.Core\obj\Debug\net8.0\ComputerSales.Core.AssemblyInfo.cs
+E:\Hoc Tap\EHOU\IT63_LuongVanTung\Webbanmaytinh\backend\ComputerSales.Core\obj\Debug\net8.0\ComputerSales.Core.csproj.CoreCompileInputs.cache
+E:\Hoc Tap\EHOU\IT63_LuongVanTung\Webbanmaytinh\backend\ComputerSales.Core\obj\Debug\net8.0\ComputerSales.Core.dll
+E:\Hoc Tap\EHOU\IT63_LuongVanTung\Webbanmaytinh\backend\ComputerSales.Core\obj\Debug\net8.0\refint\ComputerSales.Core.dll
+E:\Hoc Tap\EHOU\IT63_LuongVanTung\Webbanmaytinh\backend\ComputerSales.Core\obj\Debug\net8.0\ComputerSales.Core.pdb
+E:\Hoc Tap\EHOU\IT63_LuongVanTung\Webbanmaytinh\backend\ComputerSales.Core\obj\Debug\net8.0\ref\ComputerSales.Core.dll

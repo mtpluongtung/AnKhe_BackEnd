@@ -1,0 +1,15 @@
+E:\Hoc Tap\EHOU\IT63_LuongVanTung\Webbanmaytinh\backend\ComputerSales.Infrastructure\bin\Debug\net8.0\ComputerSales.Infrastructure.deps.json
+E:\Hoc Tap\EHOU\IT63_LuongVanTung\Webbanmaytinh\backend\ComputerSales.Infrastructure\bin\Debug\net8.0\ComputerSales.Infrastructure.dll
+E:\Hoc Tap\EHOU\IT63_LuongVanTung\Webbanmaytinh\backend\ComputerSales.Infrastructure\bin\Debug\net8.0\ComputerSales.Infrastructure.pdb
+E:\Hoc Tap\EHOU\IT63_LuongVanTung\Webbanmaytinh\backend\ComputerSales.Infrastructure\bin\Debug\net8.0\ComputerSales.Core.dll
+E:\Hoc Tap\EHOU\IT63_LuongVanTung\Webbanmaytinh\backend\ComputerSales.Infrastructure\bin\Debug\net8.0\ComputerSales.Core.pdb
+E:\Hoc Tap\EHOU\IT63_LuongVanTung\Webbanmaytinh\backend\ComputerSales.Infrastructure\obj\Debug\net8.0\ComputerSales.Infrastructure.csproj.AssemblyReference.cache
+E:\Hoc Tap\EHOU\IT63_LuongVanTung\Webbanmaytinh\backend\ComputerSales.Infrastructure\obj\Debug\net8.0\ComputerSales.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+E:\Hoc Tap\EHOU\IT63_LuongVanTung\Webbanmaytinh\backend\ComputerSales.Infrastructure\obj\Debug\net8.0\ComputerSales.Infrastructure.AssemblyInfoInputs.cache
+E:\Hoc Tap\EHOU\IT63_LuongVanTung\Webbanmaytinh\backend\ComputerSales.Infrastructure\obj\Debug\net8.0\ComputerSales.Infrastructure.AssemblyInfo.cs
+E:\Hoc Tap\EHOU\IT63_LuongVanTung\Webbanmaytinh\backend\ComputerSales.Infrastructure\obj\Debug\net8.0\ComputerSales.Infrastructure.csproj.CoreCompileInputs.cache
+E:\Hoc Tap\EHOU\IT63_LuongVanTung\Webbanmaytinh\backend\ComputerSales.Infrastructure\obj\Debug\net8.0\Computer.491CDC05.Up2Date
+E:\Hoc Tap\EHOU\IT63_LuongVanTung\Webbanmaytinh\backend\ComputerSales.Infrastructure\obj\Debug\net8.0\ComputerSales.Infrastructure.dll
+E:\Hoc Tap\EHOU\IT63_LuongVanTung\Webbanmaytinh\backend\ComputerSales.Infrastructure\obj\Debug\net8.0\refint\ComputerSales.Infrastructure.dll
+E:\Hoc Tap\EHOU\IT63_LuongVanTung\Webbanmaytinh\backend\ComputerSales.Infrastructure\obj\Debug\net8.0\ComputerSales.Infrastructure.pdb
+E:\Hoc Tap\EHOU\IT63_LuongVanTung\Webbanmaytinh\backend\ComputerSales.Infrastructure\obj\Debug\net8.0\ref\ComputerSales.Infrastructure.dll
