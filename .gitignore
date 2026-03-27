@@ -1,0 +1,6 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/ComputerSales.API/appsettings.json
+/ComputerSales.API/Properties/launchSettings.json
