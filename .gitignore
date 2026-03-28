@@ -12,3 +12,4 @@
 /ComputerSales.Infrastructure/obj
 /.vs
 /ComputerSales.API/.vs
+/ComputerSales.API/appsettings.Development.json
