@@ -13,7 +13,6 @@ namespace ComputerSalesAPI.Infrastructure.Data
         public DbSet<Order> Orders { get; set; }
         public DbSet<OrderDetail> OrderDetails { get; set; }
         public DbSet<Banner> Banners { get; set; }
-        public DbSet<NewsCategory> NewsCategories { get; set; }
         public DbSet<News> News { get; set; }
         public DbSet<WebpageConfig> WebpageConfigs { get; set; }
         public DbSet<Menu> Menus { get; set; }

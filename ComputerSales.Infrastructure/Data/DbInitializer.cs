@@ -91,22 +91,10 @@ namespace ComputerSalesAPI.Infrastructure.Data
                 await context.SaveChangesAsync();
             }
 
-            // 5. Seed News Categories
-            if (!context.NewsCategories.Any())
-            {
-                var newsCategories = new List<NewsCategory>
-                {
-                    new NewsCategory { Name = "Tin khuyến mãi", OrderBy = 1 },
-                    new NewsCategory { Name = "Tin công nghệ", OrderBy = 2 }
-                };
-                context.NewsCategories.AddRange(newsCategories);
-                await context.SaveChangesAsync();
-            }
 
-            // 6. Seed News
+            // 5. Seed News
             if (!context.News.Any())
             {
-                var firstNewsCategory = context.NewsCategories.First();
                 var news = new List<News>
                 {
                     new News
@@ -115,7 +103,6 @@ namespace ComputerSalesAPI.Infrastructure.Data
                         Description = "Hệ thống bán lẻ máy tính hàng đầu đã có mặt tại An Khê với nhiều ưu đãi hấp dẫn.",
                         Content = "<p>Chào mừng quý khách đến với lễ khai trương An Khê Computer vào ngày 25/03/2026. Hàng ngàn phần quà đang chờ đón!</p>",
                         ImageUrl = "https://cdn.tgdd.vn/Files/2023/08/21/1543305/le-khai-truong-dien-may-xanh-the-gioi-di-dong-1.jpg",
-                        CategoryId = firstNewsCategory.Id,
                         CreatedDate = DateTime.Now
                     },
                     new News
@@ -124,7 +111,6 @@ namespace ComputerSalesAPI.Infrastructure.Data
                         Description = "Khám phá danh sách những mẫu laptop gaming mạnh mẽ và giá tốt nhất hiện nay.",
                         Content = "<p>Năm 2026 chứng kiến sự bùng nổ của các dòng laptop gaming với card đồ họa RTX 50 series...</p>",
                         ImageUrl = "https://cdn.tgdd.vn/Files/2023/07/04/1536773/laptop-gaming-duoi-20-trieu-dang-mua-7.jpg",
-                        CategoryId = context.NewsCategories.Skip(1).First().Id,
                         CreatedDate = DateTime.Now.AddDays(-1)
                     }
                 };

@@ -3,6 +3,14 @@
   "WorkspaceRootPath": "E:\\Hoc Tap\\EHOU\\IT63_LuongVanTung\\Webbanmaytinh\\backend\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{36C9B782-AF7C-4341-B9A8-9BB0AA6FAAA6}|ComputerSales.API\\ComputerSales.API.csproj|e:\\hoc tap\\ehou\\it63_luongvantung\\webbanmaytinh\\backend\\computersales.api\\controllers\\newscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{36C9B782-AF7C-4341-B9A8-9BB0AA6FAAA6}|ComputerSales.API\\ComputerSales.API.csproj|solutionrelative:computersales.api\\controllers\\newscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C8D8ECAC-142F-4D55-B80C-4DD8A3F4C19A}|ComputerSales.Infrastructure\\ComputerSales.Infrastructure.csproj|e:\\hoc tap\\ehou\\it63_luongvantung\\webbanmaytinh\\backend\\computersales.infrastructure\\data\\dbinitializer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C8D8ECAC-142F-4D55-B80C-4DD8A3F4C19A}|ComputerSales.Infrastructure\\ComputerSales.Infrastructure.csproj|solutionrelative:computersales.infrastructure\\data\\dbinitializer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{36C9B782-AF7C-4341-B9A8-9BB0AA6FAAA6}|ComputerSales.API\\ComputerSales.API.csproj|e:\\hoc tap\\ehou\\it63_luongvantung\\webbanmaytinh\\backend\\computersales.api\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
       "RelativeMoniker": "D:0:0:{36C9B782-AF7C-4341-B9A8-9BB0AA6FAAA6}|ComputerSales.API\\ComputerSales.API.csproj|solutionrelative:computersales.api\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
@@ -23,24 +31,12 @@
       "RelativeMoniker": "D:0:0:{C8D8ECAC-142F-4D55-B80C-4DD8A3F4C19A}|ComputerSales.Infrastructure\\ComputerSales.Infrastructure.csproj|solutionrelative:computersales.infrastructure\\repositories\\orderrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C8D8ECAC-142F-4D55-B80C-4DD8A3F4C19A}|ComputerSales.Infrastructure\\ComputerSales.Infrastructure.csproj|e:\\hoc tap\\ehou\\it63_luongvantung\\webbanmaytinh\\backend\\computersales.infrastructure\\data\\dbinitializer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C8D8ECAC-142F-4D55-B80C-4DD8A3F4C19A}|ComputerSales.Infrastructure\\ComputerSales.Infrastructure.csproj|solutionrelative:computersales.infrastructure\\data\\dbinitializer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{C8D8ECAC-142F-4D55-B80C-4DD8A3F4C19A}|ComputerSales.Infrastructure\\ComputerSales.Infrastructure.csproj|e:\\hoc tap\\ehou\\it63_luongvantung\\webbanmaytinh\\backend\\computersales.infrastructure\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{C8D8ECAC-142F-4D55-B80C-4DD8A3F4C19A}|ComputerSales.Infrastructure\\ComputerSales.Infrastructure.csproj|solutionrelative:computersales.infrastructure\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{C8D8ECAC-142F-4D55-B80C-4DD8A3F4C19A}|ComputerSales.Infrastructure\\ComputerSales.Infrastructure.csproj|e:\\hoc tap\\ehou\\it63_luongvantung\\webbanmaytinh\\backend\\computersales.infrastructure\\repositories\\productrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{C8D8ECAC-142F-4D55-B80C-4DD8A3F4C19A}|ComputerSales.Infrastructure\\ComputerSales.Infrastructure.csproj|solutionrelative:computersales.infrastructure\\repositories\\productrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{36C9B782-AF7C-4341-B9A8-9BB0AA6FAAA6}|ComputerSales.API\\ComputerSales.API.csproj|e:\\hoc tap\\ehou\\it63_luongvantung\\webbanmaytinh\\backend\\computersales.api\\controllers\\newscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{36C9B782-AF7C-4341-B9A8-9BB0AA6FAAA6}|ComputerSales.API\\ComputerSales.API.csproj|solutionrelative:computersales.api\\controllers\\newscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{36C9B782-AF7C-4341-B9A8-9BB0AA6FAAA6}|ComputerSales.API\\ComputerSales.API.csproj|e:\\hoc tap\\ehou\\it63_luongvantung\\webbanmaytinh\\backend\\computersales.api\\controllers\\newscategoriescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{36C9B782-AF7C-4341-B9A8-9BB0AA6FAAA6}|ComputerSales.API\\ComputerSales.API.csproj|solutionrelative:computersales.api\\controllers\\newscategoriescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{36C9B782-AF7C-4341-B9A8-9BB0AA6FAAA6}|ComputerSales.API\\ComputerSales.API.csproj|e:\\hoc tap\\ehou\\it63_luongvantung\\webbanmaytinh\\backend\\computersales.api\\controllers\\contactscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -94,7 +90,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 7,
           "Children": [
             {
               "$type": "Bookmark",
@@ -102,44 +98,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "launchSettings.json",
               "DocumentMoniker": "E:\\Hoc Tap\\EHOU\\IT63_LuongVanTung\\Webbanmaytinh\\backend\\ComputerSales.API\\Properties\\launchSettings.json",
               "RelativeDocumentMoniker": "ComputerSales.API\\Properties\\launchSettings.json",
               "ToolTip": "E:\\Hoc Tap\\EHOU\\IT63_LuongVanTung\\Webbanmaytinh\\backend\\ComputerSales.API\\Properties\\launchSettings.json",
               "RelativeToolTip": "ComputerSales.API\\Properties\\launchSettings.json",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAAABoAAAAZAAAAAAAAAA==",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAUAAAATAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
               "WhenOpened": "2026-03-27T15:02:34.526Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "ApplicationDbContext.cs",
-              "DocumentMoniker": "E:\\Hoc Tap\\EHOU\\IT63_LuongVanTung\\Webbanmaytinh\\backend\\ComputerSales.Infrastructure\\Data\\ApplicationDbContext.cs",
-              "RelativeDocumentMoniker": "ComputerSales.Infrastructure\\Data\\ApplicationDbContext.cs",
-              "ToolTip": "E:\\Hoc Tap\\EHOU\\IT63_LuongVanTung\\Webbanmaytinh\\backend\\ComputerSales.Infrastructure\\Data\\ApplicationDbContext.cs",
-              "RelativeToolTip": "ComputerSales.Infrastructure\\Data\\ApplicationDbContext.cs",
-              "ViewState": "AgIAAA0AAAAAAAAAAAA0wAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-26T16:03:59.935Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "ProductRepository.cs",
-              "DocumentMoniker": "E:\\Hoc Tap\\EHOU\\IT63_LuongVanTung\\Webbanmaytinh\\backend\\ComputerSales.Infrastructure\\Repositories\\ProductRepository.cs",
-              "RelativeDocumentMoniker": "ComputerSales.Infrastructure\\Repositories\\ProductRepository.cs",
-              "ToolTip": "E:\\Hoc Tap\\EHOU\\IT63_LuongVanTung\\Webbanmaytinh\\backend\\ComputerSales.Infrastructure\\Repositories\\ProductRepository.cs",
-              "RelativeToolTip": "ComputerSales.Infrastructure\\Repositories\\ProductRepository.cs",
-              "ViewState": "AgIAAA8AAAAAAAAAAAAQwCMAAAAjAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-25T16:26:51.546Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 5,
               "Title": "ProductsController.cs",
               "DocumentMoniker": "E:\\Hoc Tap\\EHOU\\IT63_LuongVanTung\\Webbanmaytinh\\backend\\ComputerSales.API\\Controllers\\ProductsController.cs",
               "RelativeDocumentMoniker": "ComputerSales.API\\Controllers\\ProductsController.cs",
@@ -147,12 +119,11 @@
               "RelativeToolTip": "ComputerSales.API\\Controllers\\ProductsController.cs",
               "ViewState": "AgIAAAYAAAAAAAAAAAAAAA4AAAArAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-25T16:26:36.694Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-03-25T16:26:36.694Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 9,
               "Title": "ContactsController.cs",
               "DocumentMoniker": "E:\\Hoc Tap\\EHOU\\IT63_LuongVanTung\\Webbanmaytinh\\backend\\ComputerSales.API\\Controllers\\ContactsController.cs",
               "RelativeDocumentMoniker": "ComputerSales.API\\Controllers\\ContactsController.cs",
@@ -164,7 +135,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
               "Title": "BannersController.cs",
               "DocumentMoniker": "E:\\Hoc Tap\\EHOU\\IT63_LuongVanTung\\Webbanmaytinh\\backend\\ComputerSales.API\\Controllers\\BannersController.cs",
               "RelativeDocumentMoniker": "ComputerSales.API\\Controllers\\BannersController.cs",
@@ -172,12 +143,11 @@
               "RelativeToolTip": "ComputerSales.API\\Controllers\\BannersController.cs",
               "ViewState": "AgIAABMAAAAAAAAAAAA7wBMAAAA7AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-25T16:26:33.718Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-03-25T16:26:33.718Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 10,
               "Title": "WebpageConfigsController.cs",
               "DocumentMoniker": "E:\\Hoc Tap\\EHOU\\IT63_LuongVanTung\\Webbanmaytinh\\backend\\ComputerSales.API\\Controllers\\WebpageConfigsController.cs",
               "RelativeDocumentMoniker": "ComputerSales.API\\Controllers\\WebpageConfigsController.cs",
@@ -189,7 +159,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "AuthController.cs",
               "DocumentMoniker": "E:\\Hoc Tap\\EHOU\\IT63_LuongVanTung\\Webbanmaytinh\\backend\\ComputerSales.API\\Controllers\\AuthController.cs",
               "RelativeDocumentMoniker": "ComputerSales.API\\Controllers\\AuthController.cs",
@@ -202,19 +172,57 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 0,
+              "Title": "NewsController.cs",
+              "DocumentMoniker": "E:\\Hoc Tap\\EHOU\\IT63_LuongVanTung\\Webbanmaytinh\\backend\\ComputerSales.API\\Controllers\\NewsController.cs",
+              "RelativeDocumentMoniker": "ComputerSales.API\\Controllers\\NewsController.cs",
+              "ToolTip": "E:\\Hoc Tap\\EHOU\\IT63_LuongVanTung\\Webbanmaytinh\\backend\\ComputerSales.API\\Controllers\\NewsController.cs",
+              "RelativeToolTip": "ComputerSales.API\\Controllers\\NewsController.cs",
+              "ViewState": "AgIAAB0AAAAAAAAAAAAwwCUAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-25T16:06:40.032Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "DbInitializer.cs",
               "DocumentMoniker": "E:\\Hoc Tap\\EHOU\\IT63_LuongVanTung\\Webbanmaytinh\\backend\\ComputerSales.Infrastructure\\Data\\DbInitializer.cs",
               "RelativeDocumentMoniker": "ComputerSales.Infrastructure\\Data\\DbInitializer.cs",
               "ToolTip": "E:\\Hoc Tap\\EHOU\\IT63_LuongVanTung\\Webbanmaytinh\\backend\\ComputerSales.Infrastructure\\Data\\DbInitializer.cs",
               "RelativeToolTip": "ComputerSales.Infrastructure\\Data\\DbInitializer.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAABwAAAAAAAAAAAAgwC0AAABQAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-26T16:04:02.514Z"
+              "WhenOpened": "2026-03-26T16:04:02.514Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 8,
+              "Title": "ProductRepository.cs",
+              "DocumentMoniker": "E:\\Hoc Tap\\EHOU\\IT63_LuongVanTung\\Webbanmaytinh\\backend\\ComputerSales.Infrastructure\\Repositories\\ProductRepository.cs",
+              "RelativeDocumentMoniker": "ComputerSales.Infrastructure\\Repositories\\ProductRepository.cs",
+              "ToolTip": "E:\\Hoc Tap\\EHOU\\IT63_LuongVanTung\\Webbanmaytinh\\backend\\ComputerSales.Infrastructure\\Repositories\\ProductRepository.cs",
+              "RelativeToolTip": "ComputerSales.Infrastructure\\Repositories\\ProductRepository.cs",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAQwCMAAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-25T16:26:51.546Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "ApplicationDbContext.cs",
+              "DocumentMoniker": "E:\\Hoc Tap\\EHOU\\IT63_LuongVanTung\\Webbanmaytinh\\backend\\ComputerSales.Infrastructure\\Data\\ApplicationDbContext.cs",
+              "RelativeDocumentMoniker": "ComputerSales.Infrastructure\\Data\\ApplicationDbContext.cs",
+              "ToolTip": "E:\\Hoc Tap\\EHOU\\IT63_LuongVanTung\\Webbanmaytinh\\backend\\ComputerSales.Infrastructure\\Data\\ApplicationDbContext.cs",
+              "RelativeToolTip": "ComputerSales.Infrastructure\\Data\\ApplicationDbContext.cs",
+              "ViewState": "AgIAAA0AAAAAAAAAAAA0wAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-26T16:03:59.935Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
               "Title": "OrderRepository.cs",
               "DocumentMoniker": "E:\\Hoc Tap\\EHOU\\IT63_LuongVanTung\\Webbanmaytinh\\backend\\ComputerSales.Infrastructure\\Repositories\\OrderRepository.cs",
               "RelativeDocumentMoniker": "ComputerSales.Infrastructure\\Repositories\\OrderRepository.cs",
@@ -226,7 +234,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 11,
               "Title": "MenusController.cs",
               "DocumentMoniker": "E:\\Hoc Tap\\EHOU\\IT63_LuongVanTung\\Webbanmaytinh\\backend\\ComputerSales.API\\Controllers\\MenusController.cs",
               "RelativeDocumentMoniker": "ComputerSales.API\\Controllers\\MenusController.cs",
@@ -238,31 +246,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "NewsCategoriesController.cs",
-              "DocumentMoniker": "E:\\Hoc Tap\\EHOU\\IT63_LuongVanTung\\Webbanmaytinh\\backend\\ComputerSales.API\\Controllers\\NewsCategoriesController.cs",
-              "RelativeDocumentMoniker": "ComputerSales.API\\Controllers\\NewsCategoriesController.cs",
-              "ToolTip": "E:\\Hoc Tap\\EHOU\\IT63_LuongVanTung\\Webbanmaytinh\\backend\\ComputerSales.API\\Controllers\\NewsCategoriesController.cs",
-              "RelativeToolTip": "ComputerSales.API\\Controllers\\NewsCategoriesController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-25T16:06:42.648Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "NewsController.cs",
-              "DocumentMoniker": "E:\\Hoc Tap\\EHOU\\IT63_LuongVanTung\\Webbanmaytinh\\backend\\ComputerSales.API\\Controllers\\NewsController.cs",
-              "RelativeDocumentMoniker": "ComputerSales.API\\Controllers\\NewsController.cs",
-              "ToolTip": "E:\\Hoc Tap\\EHOU\\IT63_LuongVanTung\\Webbanmaytinh\\backend\\ComputerSales.API\\Controllers\\NewsController.cs",
-              "RelativeToolTip": "ComputerSales.API\\Controllers\\NewsController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-25T16:06:40.032Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 13,
               "Title": "appsettings.json",
               "DocumentMoniker": "E:\\Hoc Tap\\EHOU\\IT63_LuongVanTung\\Webbanmaytinh\\backend\\ComputerSales.API\\appsettings.json",
               "RelativeDocumentMoniker": "ComputerSales.API\\appsettings.json",
@@ -274,7 +258,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 15,
               "Title": "ApplicationDbContextModelSnapshot.cs",
               "DocumentMoniker": "E:\\Hoc Tap\\EHOU\\IT63_LuongVanTung\\Webbanmaytinh\\backend\\ComputerSales.Infrastructure\\Migrations\\ApplicationDbContextModelSnapshot.cs",
               "RelativeDocumentMoniker": "ComputerSales.Infrastructure\\Migrations\\ApplicationDbContextModelSnapshot.cs",
@@ -286,7 +270,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 17,
               "Title": "20260325150745_InitialWithIdentity.cs",
               "DocumentMoniker": "E:\\Hoc Tap\\EHOU\\IT63_LuongVanTung\\Webbanmaytinh\\backend\\ComputerSales.Infrastructure\\Migrations\\20260325150745_InitialWithIdentity.cs",
               "RelativeDocumentMoniker": "ComputerSales.Infrastructure\\Migrations\\20260325150745_InitialWithIdentity.cs",
@@ -298,7 +282,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 18,
               "Title": "CategoriesController.cs",
               "DocumentMoniker": "E:\\Hoc Tap\\EHOU\\IT63_LuongVanTung\\Webbanmaytinh\\backend\\ComputerSales.API\\Controllers\\CategoriesController.cs",
               "RelativeDocumentMoniker": "ComputerSales.API\\Controllers\\CategoriesController.cs",
@@ -310,7 +294,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 12,
               "Title": "OrdersController.cs",
               "DocumentMoniker": "E:\\Hoc Tap\\EHOU\\IT63_LuongVanTung\\Webbanmaytinh\\backend\\ComputerSales.API\\Controllers\\OrdersController.cs",
               "RelativeDocumentMoniker": "ComputerSales.API\\Controllers\\OrdersController.cs",
@@ -322,7 +306,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 19,
               "Title": "Program.cs",
               "DocumentMoniker": "E:\\Hoc Tap\\EHOU\\IT63_LuongVanTung\\Webbanmaytinh\\backend\\ComputerSales.API\\Program.cs",
               "RelativeDocumentMoniker": "ComputerSales.API\\Program.cs",
@@ -334,7 +318,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 14,
               "Title": "appsettings.Development.json",
               "DocumentMoniker": "E:\\Hoc Tap\\EHOU\\IT63_LuongVanTung\\Webbanmaytinh\\backend\\ComputerSales.API\\appsettings.Development.json",
               "RelativeDocumentMoniker": "ComputerSales.API\\appsettings.Development.json",
@@ -346,7 +330,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 16,
               "Title": "20260325151946_AddMissingEntities.cs",
               "DocumentMoniker": "E:\\Hoc Tap\\EHOU\\IT63_LuongVanTung\\Webbanmaytinh\\backend\\ComputerSales.Infrastructure\\Migrations\\20260325151946_AddMissingEntities.cs",
               "RelativeDocumentMoniker": "ComputerSales.Infrastructure\\Migrations\\20260325151946_AddMissingEntities.cs",
