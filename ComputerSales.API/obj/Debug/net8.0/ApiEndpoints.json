@@ -147,10 +147,26 @@
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
-    "Parameters": [],
+    "Parameters": [
+      {
+        "Name": "searchTerm",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "pageIndex",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "pageSize",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
     "ReturnTypes": [
       {
-        "Type": "System.Collections.Generic.IReadOnlyList\u00601[[ComputerSalesAPI.Core.Entities.Category, ComputerSales.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "Type": "ComputerSalesAPI.Core.DTOs.PagedResult\u00601[[ComputerSalesAPI.Core.Entities.Category, ComputerSales.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
         "MediaTypes": [
           "text/plain",
           "application/json",
@@ -476,6 +492,11 @@
     "Order": 0,
     "Parameters": [
       {
+        "Name": "searchTerm",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
         "Name": "pageIndex",
         "Type": "System.Int32",
         "IsRequired": false
@@ -486,7 +507,17 @@
         "IsRequired": false
       }
     ],
-    "ReturnTypes": []
+    "ReturnTypes": [
+      {
+        "Type": "ComputerSalesAPI.Core.DTOs.PagedResult\u00601[[ComputerSalesAPI.Core.Entities.News, ComputerSales.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
   },
   {
     "ContainingType": "ComputerSalesAPI.Controllers.NewsController",
@@ -584,7 +615,23 @@
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
-    "Parameters": [],
+    "Parameters": [
+      {
+        "Name": "searchTerm",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "pageIndex",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "pageSize",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
     "ReturnTypes": []
   },
   {
@@ -668,6 +715,31 @@
     "IsController": true,
     "Order": 0,
     "Parameters": [
+      {
+        "Name": "categoryId",
+        "Type": "System.Nullable\u00601[[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "minPrice",
+        "Type": "System.Nullable\u00601[[System.Decimal, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "maxPrice",
+        "Type": "System.Nullable\u00601[[System.Decimal, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "sort",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "searchTerm",
+        "Type": "System.String",
+        "IsRequired": false
+      },
       {
         "Name": "pageIndex",
         "Type": "System.Int32",
@@ -838,6 +910,53 @@
         "Name": "period",
         "Type": "System.String",
         "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ComputerSales.API.Controllers.UsersController",
+    "Method": "GetUsers",
+    "RelativePath": "api/Users",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "searchTerm",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "pageIndex",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "pageSize",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ComputerSales.API.Controllers.UsersController",
+    "Method": "UpdateUserRole",
+    "RelativePath": "api/Users/{id}/role",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "model",
+        "Type": "ComputerSales.API.DTOs.UpdateRoleDto",
+        "IsRequired": true
       }
     ],
     "ReturnTypes": []

@@ -1,10 +1,8 @@
+using ComputerSalesAPI.Core.DTOs;
 using ComputerSalesAPI.Core.Entities;
 using ComputerSalesAPI.Core.Interfaces;
 using ComputerSalesAPI.Infrastructure.Data;
 using Microsoft.EntityFrameworkCore;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 
 namespace ComputerSalesAPI.Infrastructure.Repositories
 {
@@ -14,24 +12,59 @@ namespace ComputerSalesAPI.Infrastructure.Repositories
         {
         }
 
-        public async Task<IReadOnlyList<Order>> GetOrdersByUserIdAsync(string userId)
+        public async Task<PagedResult<Order>> GetOrdersByUserIdPagedAsync(string userId, int pageIndex, int pageSize)
         {
-            return await _context.Orders
+            var query = _context.Orders
                 .Include(o => o.OrderDetails)
                 .ThenInclude(od => od.Product)
                 .Where(o => o.UserId == userId)
-                .OrderByDescending(o => o.OrderDate)
+                .OrderByDescending(o => o.OrderDate);
+
+            var totalCount = await query.CountAsync();
+            var data = await query
+                .Skip((pageIndex - 1) * pageSize)
+                .Take(pageSize)
                 .ToListAsync();
+
+            return new PagedResult<Order>
+            {
+                PageIndex = pageIndex,
+                PageSize = pageSize,
+                TotalCount = totalCount,
+                Data = data
+            };
         }
 
-        public async Task<IReadOnlyList<Order>> GetAllOrdersWithDetailsAsync()
+        public async Task<PagedResult<Order>> GetAllOrdersWithDetailsPagedAsync(string? searchTerm, int pageIndex, int pageSize)
         {
-            return await _context.Orders
+            var query = _context.Orders
                 .Include(o => o.OrderDetails)
                 .ThenInclude(od => od.Product)
                 .Include(o => o.User)
-                .OrderByDescending(o => o.OrderDate)
+                .AsQueryable();
+
+            if (!string.IsNullOrEmpty(searchTerm))
+            {
+                query = query.Where(o => o.Id.ToString().Contains(searchTerm) || 
+                                       o.ReceiverName.Contains(searchTerm) ||
+                                       (o.User != null && o.User.UserName.Contains(searchTerm)));
+            }
+
+            query = query.OrderByDescending(o => o.OrderDate);
+
+            var totalCount = await query.CountAsync();
+            var data = await query
+                .Skip((pageIndex - 1) * pageSize)
+                .Take(pageSize)
                 .ToListAsync();
+
+            return new PagedResult<Order>
+            {
+                PageIndex = pageIndex,
+                PageSize = pageSize,
+                TotalCount = totalCount,
+                Data = data
+            };
         }
     }
 }

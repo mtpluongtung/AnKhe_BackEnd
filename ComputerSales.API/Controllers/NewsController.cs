@@ -10,24 +10,24 @@ namespace ComputerSalesAPI.Controllers
     [Route("api/[controller]")]
     public class NewsController : ControllerBase
     {
-        private readonly IGenericRepository<News> _repo;
+        private readonly INewsRepository _newsRepo;
 
-        public NewsController(IGenericRepository<News> repo)
+        public NewsController(INewsRepository newsRepo)
         {
-            _repo = repo;
+            _newsRepo = newsRepo;
         }
 
         [HttpGet]
-        public async Task<IActionResult> GetNews([FromQuery] int pageIndex = 1, [FromQuery] int pageSize = 10)
+        public async Task<ActionResult<PagedResult<News>>> GetNews([FromQuery] string? searchTerm, [FromQuery] int pageIndex = 1, [FromQuery] int pageSize = 10)
         {
-            var items = await _repo.ListAllPagedAsync(pageIndex, pageSize);
+            var items = await _newsRepo.GetNewsPagedAsync(searchTerm, pageIndex, pageSize);
             return Ok(items);
         }
 
         [HttpGet("{id}")]
         public async Task<ActionResult<News>> GetSingleNews(int id)
         {
-            var item = await _repo.GetByIdAsync(id);
+            var item = await _newsRepo.GetByIdAsync(id);
             if (item == null) return NotFound();
             return Ok(item);
         }
@@ -36,8 +36,8 @@ namespace ComputerSalesAPI.Controllers
         [Authorize(Roles = "Admin")]
         public async Task<ActionResult<News>> CreateNews(News item)
         {
-            _repo.Add(item);
-            await _repo.SaveChangesAsync();
+            _newsRepo.Add(item);
+            await _newsRepo.SaveChangesAsync();
             return CreatedAtAction(nameof(GetSingleNews), new { id = item.Id }, item);
         }
 
@@ -46,8 +46,8 @@ namespace ComputerSalesAPI.Controllers
         public async Task<ActionResult> UpdateNews(int id, News item)
         {
             if (id != item.Id) return BadRequest();
-            _repo.Update(item);
-            await _repo.SaveChangesAsync();
+            _newsRepo.Update(item);
+            await _newsRepo.SaveChangesAsync();
             return NoContent();
         }
 
@@ -55,10 +55,10 @@ namespace ComputerSalesAPI.Controllers
         [Authorize(Roles = "Admin")]
         public async Task<ActionResult> DeleteNews(int id)
         {
-            var item = await _repo.GetByIdAsync(id);
+            var item = await _newsRepo.GetByIdAsync(id);
             if (item == null) return NotFound();
-            _repo.Delete(item);
-            await _repo.SaveChangesAsync();
+            _newsRepo.Delete(item);
+            await _newsRepo.SaveChangesAsync();
             return NoContent();
         }
     }

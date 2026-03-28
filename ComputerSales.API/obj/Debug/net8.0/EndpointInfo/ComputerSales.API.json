@@ -257,32 +257,50 @@
         "tags": [
           "Categories"
         ],
+        "parameters": [
+          {
+            "name": "searchTerm",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "pageIndex",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32",
+              "default": 1
+            }
+          },
+          {
+            "name": "pageSize",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32",
+              "default": 10
+            }
+          }
+        ],
         "responses": {
           "200": {
             "description": "OK",
             "content": {
               "text/plain": {
                 "schema": {
-                  "type": "array",
-                  "items": {
-                    "$ref": "#/components/schemas/Category"
-                  }
+                  "$ref": "#/components/schemas/CategoryPagedResult"
                 }
               },
               "application/json": {
                 "schema": {
-                  "type": "array",
-                  "items": {
-                    "$ref": "#/components/schemas/Category"
-                  }
+                  "$ref": "#/components/schemas/CategoryPagedResult"
                 }
               },
               "text/json": {
                 "schema": {
-                  "type": "array",
-                  "items": {
-                    "$ref": "#/components/schemas/Category"
-                  }
+                  "$ref": "#/components/schemas/CategoryPagedResult"
                 }
               }
             }
@@ -814,6 +832,13 @@
         ],
         "parameters": [
           {
+            "name": "searchTerm",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
             "name": "pageIndex",
             "in": "query",
             "schema": {
@@ -834,7 +859,24 @@
         ],
         "responses": {
           "200": {
-            "description": "OK"
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/NewsPagedResult"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/NewsPagedResult"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/NewsPagedResult"
+                }
+              }
+            }
           }
         }
       },
@@ -991,6 +1033,33 @@
         "tags": [
           "Orders"
         ],
+        "parameters": [
+          {
+            "name": "searchTerm",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "pageIndex",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32",
+              "default": 1
+            }
+          },
+          {
+            "name": "pageSize",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32",
+              "default": 10
+            }
+          }
+        ],
         "responses": {
           "200": {
             "description": "OK"
@@ -1132,6 +1201,44 @@
           "Products"
         ],
         "parameters": [
+          {
+            "name": "categoryId",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          },
+          {
+            "name": "minPrice",
+            "in": "query",
+            "schema": {
+              "type": "number",
+              "format": "double"
+            }
+          },
+          {
+            "name": "maxPrice",
+            "in": "query",
+            "schema": {
+              "type": "number",
+              "format": "double"
+            }
+          },
+          {
+            "name": "sort",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "searchTerm",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          },
           {
             "name": "pageIndex",
             "in": "query",
@@ -1419,6 +1526,86 @@
         "tags": [
           "Statistics"
         ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Users": {
+      "get": {
+        "tags": [
+          "Users"
+        ],
+        "parameters": [
+          {
+            "name": "searchTerm",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "pageIndex",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32",
+              "default": 1
+            }
+          },
+          {
+            "name": "pageSize",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32",
+              "default": 10
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Users/{id}/role": {
+      "put": {
+        "tags": [
+          "Users"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/UpdateRoleDto"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/UpdateRoleDto"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/UpdateRoleDto"
+              }
+            }
+          }
+        },
         "responses": {
           "200": {
             "description": "OK"
@@ -1749,6 +1936,36 @@
         },
         "additionalProperties": false
       },
+      "CategoryPagedResult": {
+        "type": "object",
+        "properties": {
+          "pageIndex": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "pageSize": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "totalCount": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "data": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/Category"
+            },
+            "nullable": true
+          },
+          "totalPages": {
+            "type": "integer",
+            "format": "int32",
+            "readOnly": true
+          }
+        },
+        "additionalProperties": false
+      },
       "Contact": {
         "type": "object",
         "properties": {
@@ -1869,6 +2086,36 @@
           },
           "isHot": {
             "type": "boolean"
+          }
+        },
+        "additionalProperties": false
+      },
+      "NewsPagedResult": {
+        "type": "object",
+        "properties": {
+          "pageIndex": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "pageSize": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "totalCount": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "data": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/News"
+            },
+            "nullable": true
+          },
+          "totalPages": {
+            "type": "integer",
+            "format": "int32",
+            "readOnly": true
           }
         },
         "additionalProperties": false
@@ -2033,6 +2280,19 @@
             "format": "email"
           },
           "password": {
+            "minLength": 1,
+            "type": "string"
+          }
+        },
+        "additionalProperties": false
+      },
+      "UpdateRoleDto": {
+        "required": [
+          "role"
+        ],
+        "type": "object",
+        "properties": {
+          "role": {
             "minLength": 1,
             "type": "string"
           }

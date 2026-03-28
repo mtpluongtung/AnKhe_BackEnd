@@ -33,12 +33,45 @@ namespace ComputerSalesAPI.Infrastructure.Repositories
                 .ToListAsync();
         }
 
-        public override async Task<PagedResult<Product>> ListAllPagedAsync(int pageIndex, int pageSize)
+        public async Task<PagedResult<Product>> GetProductsAsync(int? categoryId, decimal? minPrice, decimal? maxPrice, string? sort, string? searchTerm, int pageIndex, int pageSize)
         {
-            var totalCount = await _context.Products.CountAsync();
-            var data = await _context.Products
+            var query = _context.Products
                 .Include(p => p.Category)
-                .OrderByDescending(p => p.Id)
+                .AsQueryable();
+
+            // Filtering
+            if (!string.IsNullOrEmpty(searchTerm))
+            {
+                query = query.Where(p => p.Name.Contains(searchTerm) || p.Description.Contains(searchTerm));
+            }
+
+            if (categoryId.HasValue && categoryId > 0)
+            {
+                query = query.Where(p => p.CategoryId == categoryId);
+            }
+
+            if (minPrice.HasValue)
+            {
+                query = query.Where(p => p.Price >= minPrice);
+            }
+
+            if (maxPrice.HasValue)
+            {
+                query = query.Where(p => p.Price <= maxPrice);
+            }
+
+            // Sorting
+            query = sort switch
+            {
+                "priceAsc" => query.OrderBy(p => p.Price),
+                "priceDesc" => query.OrderByDescending(p => p.Price),
+                "nameAsc" => query.OrderBy(p => p.Name),
+                "nameDesc" => query.OrderByDescending(p => p.Name),
+                _ => query.OrderByDescending(p => p.Id)
+            };
+
+            var totalCount = await query.CountAsync();
+            var data = await query
                 .Skip((pageIndex - 1) * pageSize)
                 .Take(pageSize)
                 .ToListAsync();
@@ -50,6 +83,11 @@ namespace ComputerSalesAPI.Infrastructure.Repositories
                 TotalCount = totalCount,
                 Data = data
             };
+        }
+
+        public override async Task<PagedResult<Product>> ListAllPagedAsync(int pageIndex, int pageSize)
+        {
+            return await GetProductsAsync(null, null, null, null, null, pageIndex, pageSize);
         }
     }
 }

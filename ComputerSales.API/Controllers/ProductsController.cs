@@ -20,9 +20,16 @@ namespace ComputerSalesAPI.Controllers
         }
 
         [HttpGet]
-        public async Task<IActionResult> GetProducts([FromQuery] int pageIndex = 1, [FromQuery] int pageSize = 10)
+        public async Task<IActionResult> GetProducts(
+            [FromQuery] int? categoryId,
+            [FromQuery] decimal? minPrice,
+            [FromQuery] decimal? maxPrice,
+            [FromQuery] string? sort,
+            [FromQuery] string? searchTerm,
+            [FromQuery] int pageIndex = 1, 
+            [FromQuery] int pageSize = 10)
         {
-            var products = await _productRepository.ListAllPagedAsync(pageIndex, pageSize);
+            var products = await _productRepository.GetProductsAsync(categoryId, minPrice, maxPrice, sort, searchTerm, pageIndex, pageSize);
             return Ok(products);
         }
 

@@ -23,18 +23,18 @@ namespace ComputerSalesAPI.Controllers
         }
 
         [HttpGet]
-        public async Task<IActionResult> GetOrders()
+        public async Task<IActionResult> GetOrders([FromQuery] string? searchTerm, [FromQuery] int pageIndex = 1, [FromQuery] int pageSize = 10)
         {
             var userId = User.FindFirst(System.Security.Claims.ClaimTypes.NameIdentifier)?.Value;
             if (string.IsNullOrEmpty(userId)) return Unauthorized();
 
             if (User.IsInRole("Admin"))
             {
-                var allOrders = await _orderRepo.GetAllOrdersWithDetailsAsync();
+                var allOrders = await _orderRepo.GetAllOrdersWithDetailsPagedAsync(searchTerm, pageIndex, pageSize);
                 return Ok(allOrders);
             }
 
-            var orders = await _orderRepo.GetOrdersByUserIdAsync(userId);
+            var orders = await _orderRepo.GetOrdersByUserIdPagedAsync(userId, pageIndex, pageSize);
             return Ok(orders);
         }
 

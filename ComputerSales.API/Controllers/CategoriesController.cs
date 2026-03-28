@@ -1,3 +1,4 @@
+using ComputerSalesAPI.Core.DTOs;
 using ComputerSalesAPI.Core.Entities;
 using ComputerSalesAPI.Core.Interfaces;
 using Microsoft.AspNetCore.Authorization;
@@ -11,17 +12,17 @@ namespace ComputerSalesAPI.Controllers
     [Route("api/[controller]")]
     public class CategoriesController : ControllerBase
     {
-        private readonly IGenericRepository<Category> _categoryRepo;
+        private readonly ICategoryRepository _categoryRepo;
 
-        public CategoriesController(IGenericRepository<Category> categoryRepo)
+        public CategoriesController(ICategoryRepository categoryRepo)
         {
             _categoryRepo = categoryRepo;
         }
 
         [HttpGet]
-        public async Task<ActionResult<IReadOnlyList<Category>>> GetCategories()
+        public async Task<ActionResult<PagedResult<Category>>> GetCategories([FromQuery] string? searchTerm, [FromQuery] int pageIndex = 1, [FromQuery] int pageSize = 10)
         {
-            var categories = await _categoryRepo.ListAllAsync();
+            var categories = await _categoryRepo.GetCategoriesAsync(searchTerm, pageIndex, pageSize);
             return Ok(categories);
         }
 

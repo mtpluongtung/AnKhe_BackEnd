@@ -7,14 +7,16 @@ using Microsoft.AspNetCore.Identity;
 using Microsoft.IdentityModel.Tokens;
 using ComputerSalesAPI.Infrastructure.Repositories;
 using Microsoft.EntityFrameworkCore;
+using System.Text.Json;
 
 var builder = WebApplication.CreateBuilder(args);
 
-// Add services to the container.
+
 builder.Services.AddControllers()
     .AddJsonOptions(options =>
     {
         options.JsonSerializerOptions.ReferenceHandler = System.Text.Json.Serialization.ReferenceHandler.IgnoreCycles;
+        options.JsonSerializerOptions.PropertyNamingPolicy = JsonNamingPolicy.CamelCase;
     });
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
@@ -51,6 +53,8 @@ builder.Services.AddAuthentication(options =>
 // Configure Dependency Injection for Repositories
 builder.Services.AddScoped(typeof(IGenericRepository<>), typeof(GenericRepository<>));
 builder.Services.AddScoped<IProductRepository, ProductRepository>();
+builder.Services.AddScoped<ICategoryRepository, CategoryRepository>();
+builder.Services.AddScoped<INewsRepository, NewsRepository>();
 builder.Services.AddScoped<IOrderRepository, OrderRepository>();
 
 // Configure CORS
